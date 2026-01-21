@@ -25,8 +25,10 @@
 }
 .Main_Text
 {
-    margin-left: 900px;
+    margin-left: 550px;
     margin-right: 100px;
+    --Main-Text-Width: 900px;
+    width: var(--Main-Text-Width);
     margin-top: 50px;
     padding: 0px 15px 30px 15px;
     border: 1px solid #ccc;
@@ -60,4 +62,17 @@ p
 .Highlighted_Text
 {
     font-weight: bold;
+}
+.Button_Left
+{
+    float: left;
+    margin-left: 10px;
+}
+.Button_Center
+{
+    margin-left: calc(var(--Main-Text-Width) /  2 - 50px);
+}
+.Button_Right
+{
+    float: right;
 }
