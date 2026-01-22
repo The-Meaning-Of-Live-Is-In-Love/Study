@@ -24,3 +24,16 @@ function Answer_2(id)
         alert("Неправильно.");
     }
 }
+function Answer_3(id)
+{
+    event.preventDefault();
+    Task_Answer_3 = document.querySelector(`[name="${id}"]:checked`).value;
+    if (Task_Answer_3 == 3)
+    {
+        alert("Правильно!");
+    }
+    else
+    {
+        alert("Неправильно.");
+    }
+}
