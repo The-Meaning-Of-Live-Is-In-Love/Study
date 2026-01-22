@@ -35,7 +35,7 @@
         <div class = "Sidebar">
             <details>
                 <summary>
-                    Список заданий
+                    Каталог заданий
                 </summary>
                 <ul>
                     <li>
@@ -91,22 +91,42 @@
                 </ul>
             </details>
         </div>
-        <script src = "JavaScript/Main.js">
-        </script>
         <div class = "Main_Text">
-            Текст
+            <div class = "Main_Text_Header">
+                <h1>
+                    Задание № 6
+                </h1>
+            </div>
+            Что подразумевает этап — «производство»?
             <div>
-                <form onsubmit = "return Answer_6('Task_Answer_1_1')">
-                    <input type = "checkbox" name = "Task_Answer_1_1" id = "Task_Answer_1_1"/>...
+                <script src = "JavaScript/Main.js">
+                </script>
+                <form onsubmit = "return Answer_6('Task_Answer_6')">
+                    <input type = "radio" name = "Task_Answer_6" id = "Task_Answer_6_1" value = "1"/>
+                    Перевод алгоритма на конкретный язык программирования с последующим исправлением синтаксических ошибок.
                     <br>
-                    <input type = "checkbox" name = "Task_Answer_1_2" id = "Task_Answer_1_3"/>...
+                    <input type = "radio" name = "Task_Answer_6" id = "Task_Answer_6_2" value = "2"/>
+                    Поддержка программного продутка.
                     <br>
-                    <input type = "checkbox" name = "Task_Answer_1_2" id = "Task_Answer_1_3"/>...
+                    <input type = "radio" name = "Task_Answer_6" id = "Task_Answer_6_3" value = "3"/>
+                    Внедрение программного продукта на устройства пользователей, его распространение и инсталляция.
                     <br>
-                    <button type = "submit">
-                        Отправить
-                    </button>
+                    <div class = "Button_Center">
+                        <button type = "submit">
+                            Отправить
+                        </button>
+                    </div>
                 </form>
+                <div class = "Button_Left">
+                    <button onclick = "window.location = 'Task_5.html'">
+                        Предыдущая страница
+                    </button>
+                </div>
+                <div class = "Button_Right">
+                    <button onclick = "window.location = 'Task_7.html'">
+                        Следующая страница
+                    </button>
+                </div>
             </div>
         </div>
     </body>
