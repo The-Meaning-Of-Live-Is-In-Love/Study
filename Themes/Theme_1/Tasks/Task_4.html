@@ -91,22 +91,42 @@
                 </ul>
             </details>
         </div>
-        <script src = "JavaScript/Main.js">
-        </script>
         <div class = "Main_Text">
-            Текст
+            <div class = "Main_Text_Header">
+                <h1>
+                    Задание № 4
+                </h1>
+            </div>
+            К какому этапу относится понятие — «модульность»?
             <div>
-                <form onsubmit = "return Answer_4('Task_Answer_1_1')">
-                    <input type = "checkbox" name = "Task_Answer_1_1" id = "Task_Answer_1_1"/>...
+                <script src = "JavaScript/Main.js">
+                </script>
+                <form onsubmit = "return Answer_4('Task_Answer_4')">
+                    <input type = "radio" name = "Task_Answer_4" id = "Task_Answer_4_1" value = "1"/>
+                    Разработка.
                     <br>
-                    <input type = "checkbox" name = "Task_Answer_1_2" id = "Task_Answer_1_3"/>...
+                    <input type = "radio" name = "Task_Answer_4" id = "Task_Answer_4_2" value = "2"/>
+                    Постановка задачи.
                     <br>
-                    <input type = "checkbox" name = "Task_Answer_1_2" id = "Task_Answer_1_3"/>...
+                    <input type = "radio" name = "Task_Answer_4" id = "Task_Answer_4_3" value = "3"/>
+                    Верификация.
                     <br>
-                    <button type = "submit">
-                        Отправить
-                    </button>
+                    <div class = "Button_Center">
+                        <button type = "submit">
+                            Отправить
+                        </button>
+                    </div>
                 </form>
+                <div class = "Button_Left">
+                    <button onclick = "window.location = 'Task_3.html'">
+                        Предыдущая страница
+                    </button>
+                </div>
+                <div class = "Button_Right">
+                    <button onclick = "window.location = 'Task_5.html'">
+                        Следующая страница
+                    </button>
+                </div>
             </div>
         </div>
     </body>
