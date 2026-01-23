@@ -35,7 +35,7 @@
         <div class = "Sidebar">
             <details>
                 <summary>
-                    Список заданий
+                    Каталог заданий
                 </summary>
                 <ul>
                     <li>
@@ -91,22 +91,42 @@
                 </ul>
             </details>
         </div>
-        <script src = "JavaScript/Main.js">
-        </script>
         <div class = "Main_Text">
-            Текст
+            <div class = "Main_Text_Header">
+                <h1>
+                    Задание № 7
+                </h1>
+            </div>
+            Что подразумевает этап — «тестирование»?
             <div>
-                <form onsubmit = "return Answer_7('Task_Answer_1_1')">
-                    <input type = "checkbox" name = "Task_Answer_1_1" id = "Task_Answer_1_1"/>...
+                <script src = "JavaScript/Main.js">
+                </script>
+                <form onsubmit = "return Answer_7('Task_Answer_7')">
+                    <input type = "radio" name = "Task_Answer_7" id = "Task_Answer_7_1" value = "1"/>
+                    Выявление и исправление логических ошибок.
                     <br>
-                    <input type = "checkbox" name = "Task_Answer_1_2" id = "Task_Answer_1_3"/>...
+                    <input type = "radio" name = "Task_Answer_7" id = "Task_Answer_7_2" value = "2"/>
+                    Поддержка программы.
                     <br>
-                    <input type = "checkbox" name = "Task_Answer_1_2" id = "Task_Answer_1_3"/>...
+                    <input type = "radio" name = "Task_Answer_7" id = "Task_Answer_7_3" value = "3"/>
+                    Упрощение процесса решения задачи.
                     <br>
-                    <button type = "submit">
-                        Отправить
-                    </button>
+                    <div class = "Button_Center">
+                        <button type = "submit">
+                            Отправить
+                        </button>
+                    </div>
                 </form>
+                <div class = "Button_Left">
+                    <button onclick = "window.location = 'Task_6.html'">
+                        Предыдущая страница
+                    </button>
+                </div>
+                <div class = "Button_Right">
+                    <button onclick = "window.location = 'Task_8.html'">
+                        Следующая страница
+                    </button>
+                </div>
             </div>
         </div>
     </body>
