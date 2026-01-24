@@ -35,7 +35,7 @@
         <div class = "Sidebar">
             <details>
                 <summary>
-                    Список заданий
+                    Каталог заданий
                 </summary>
                 <ul>
                     <li>
@@ -91,22 +91,42 @@
                 </ul>
             </details>
         </div>
-        <script src = "JavaScript/Main.js">
-        </script>
         <div class = "Main_Text">
-            Текст
+            <div class = "Main_Text_Header">
+                <h1>
+                    Задание № 9
+                </h1>
+            </div>
+            Что такое алгоритм?
             <div>
-                <form onsubmit = "return Answer_9('Task_Answer_1_1')">
-                    <input type = "checkbox" name = "Task_Answer_1_1" id = "Task_Answer_1_1"/>...
+                <script src = "JavaScript/Main.js">
+                </script>
+                <form onsubmit = "return Answer_9('Task_Answer_9')">
+                    <input type = "radio" name = "Task_Answer_9" id = "Task_Answer_9_1" value = "1"/>
+                    Формальное высказывание, описывающее конкретные условия, что должны выполняться в определённой точки программы.
                     <br>
-                    <input type = "checkbox" name = "Task_Answer_1_2" id = "Task_Answer_1_3"/>...
+                    <input type = "radio" name = "Task_Answer_9" id = "Task_Answer_9_2" value = "2"/>
+                    Условие, что должно выполняться до и после каждого выполнения цикла, являющегося частью алгоритма.
                     <br>
-                    <input type = "checkbox" name = "Task_Answer_1_2" id = "Task_Answer_1_3"/>...
+                    <input type = "radio" name = "Task_Answer_9" id = "Task_Answer_9_3" value = "3"/>
+                    Пошаговое описание метода решения задачи за конечный отрезок времени.
                     <br>
-                    <button type = "submit">
-                        Отправить
-                    </button>
+                    <div class = "Button_Center">
+                        <button type = "submit">
+                            Отправить
+                        </button>
+                    </div>
                 </form>
+                <div class = "Button_Left">
+                    <button onclick = "window.location = 'Task_8.html'">
+                        Предыдущая страница
+                    </button>
+                </div>
+                <div class = "Button_Right">
+                    <button onclick = "window.location = 'Task_10.html'">
+                        Следующая страница
+                    </button>
+                </div>
             </div>
         </div>
     </body>
