@@ -35,7 +35,7 @@
         <div class = "Sidebar">
             <details>
                 <summary>
-                    Список заданий
+                    Каталог заданий
                 </summary>
                 <ul>
                     <li>
@@ -91,22 +91,37 @@
                 </ul>
             </details>
         </div>
-        <script src = "JavaScript/Main.js">
-        </script>
         <div class = "Main_Text">
-            Текст
+            <div class = "Main_Text_Header">
+                <h1>
+                    Задание № 10
+                </h1>
+            </div>
+            Что такое инвариант цикла?
             <div>
-                <form onsubmit = "return Answer_10('Task_Answer_1_1')">
-                    <input type = "checkbox" name = "Task_Answer_1_1" id = "Task_Answer_1_1"/>...
+                <script src = "JavaScript/Main.js">
+                </script>
+                <form onsubmit = "return Answer_10('Task_Answer_10')">
+                    <input type = "radio" name = "Task_Answer_10" id = "Task_Answer_10_1" value = "1"/>
+                    Условие, что должно выполняться до и после каждого выполнения цикла, являющегося частью алгоритма.
                     <br>
-                    <input type = "checkbox" name = "Task_Answer_1_2" id = "Task_Answer_1_3"/>...
+                    <input type = "radio" name = "Task_Answer_10" id = "Task_Answer_10_2" value = "2"/>
+                    Условие, которое всегда должно быть истинным в конкретной точке алгоритма.
                     <br>
-                    <input type = "checkbox" name = "Task_Answer_1_2" id = "Task_Answer_1_3"/>...
+                    <input type = "radio" name = "Task_Answer_10" id = "Task_Answer_10_3" value = "3"/>
+                    Свойство программ, состоящих из слабо связанных и узко специализированных модулей.
                     <br>
-                    <button type = "submit">
-                        Отправить
-                    </button>
+                    <div class = "Button_Center">
+                        <button type = "submit">
+                            Отправить
+                        </button>
+                    </div>
                 </form>
+                <div class = "Button_Left">
+                    <button onclick = "window.location = 'Task_9.html'">
+                        Предыдущая страница
+                    </button>
+                </div>
             </div>
         </div>
     </body>
