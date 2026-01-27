@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang = "ru">
+    <head>
+        <meta charset = "utf-8">
+        <title>
+            Принципы программирования
+        </title>
+        <link rel = "stylesheet" href = "../../../../CSS/Style.css">
+    </head>
+    <body>
+        <div class = "Header">
+            <h1>
+                Принципы программирования
+            </h1>
+            <div class = "Navigation">
+                <ul>
+                    <li>
+                        <a href = "../../../../Index.html">
+                            Главная
+                        </a>
+                    </li>
+                    <li>
+                        <div class = "Highlighted_Text">
+                            Теория
+                        </div>
+                    </li>
+                    <li>
+                        <a href = "../../Tasks/Tasks.html">
+                            Задания
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class = "Sidebar">
+            <details>
+                <summary>
+                    Список тем
+                </summary>
+                <ul>
+                    <li>
+                        <a href = "Topic_1.html">
+                            Вопросы
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "Topic_2.html">
+                            Принципы программирования
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "Topic_3.html">
+                            Модифицируемость
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "Topic_4.html">
+                            Операторы — «typedef» — облегчают модификацию программ
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "Topic_5.html">
+                            Разметка вывода
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "Topic_6.html">
+                            Надёжное программирование
+                        </a>
+                    </li>
+                    <li>
+                        <div class = "Highlighted_Text">
+                            Ненадёжная функция
+                        </div>
+                    </li>
+                    <li>
+                        <a href = "Topic_8.html">
+                            Надёжная функция
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "Topic_9.html">
+                            Предотвращение семантических ошибок
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "Topic_10.html">
+                            Факториал целого числа
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "Topic_11.html">
+                            8 вопросов, касающихся стиля программирования
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "Topic_12.html">
+                            Основные характеристики программной документации
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "Topic_13.html">
+                            Резюме
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "Topic_14.html">
+                            Вопросы для самопроверки
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "Topic_15.html">
+                            Ответы
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "Topic_16.html">
+                            Ответы: спецификации включают в себя определения типов, аргументы, а также пред- и постусловия. 
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "Topic_17.html">
+                            Другое решение
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "Topic_18.html">
+                            Упражнения
+                        </a>
+                    </li>
+                </ul>
+            </details>
+        </div>
+        <div class = "Main_Text">
+            <div class = "Main_Text_Header">
+                <h1>
+                    Ненадёжная функция
+                </h1>
+            </div>
+            <p>
+                const mt LOW_END =10;
+            </p>
+            <p>
+                // Нижняя граница доходов.
+            </p>
+            <p>
+                const int HIGH_END = 10; // Верхняя граница доходов .
+            </p>
+            <p>
+                const int TABLE_SIZE = HIGH_END - LOW__END + 1; 
+            </p>
+            <p>
+                typedef int TableType[TABLE_SIZE]; 
+            </p>
+            <p>
+                int index(int group) 
+            </p>
+            <p>
+                // Возвращает индекс массива, соответствующий номеру группы. 
+            </p>
+            <p>
+                {
+            </p>
+            <p>
+                return group - LOW_END; 
+            </p>
+            <p>
+                } // Конец функции — «index».
+            </p>
+            <p>
+                void readData(TableType incomeData) 
+            </p>
+            <p>
+                // Считывает и организовывает статистические данные о доходах. Предусловие: вызываемый модуль выдает инструкции и предлагает пользователю ввести данные. Входные данные не должны содержать ошибки. Каждая строка имеет вид — «G» (количество), «N» (количество людей, чей годовой доход равен тысячам долларов со значением — «G» (LOW_END <= G <= HIGH_END)). Ввод данных завершается после считывания строки, в которой числа — «G», «N» — равны нулю. Постусловие: число — «incomeData[G-LOW__END]» — равно общему количеству людей, чей доход равен значению — «G» — тысяч долларов для каждого данного считанного значения. Считанные значения выводятся на экран.
+            </p>
+            <p>
+                {
+            </p>
+            <p>
+                int group, number; // Входные значения.
+            </p>
+            <p>
+                // Очищаем массив.
+            </p>
+            <p>
+                for (group = LOW__END; group <= HIGH_END; ++group)
+            </p>
+            <p>
+                incomeData[index(group)] = 0;
+            </p>
+            <p>
+                for (cin >> group >> number; (group != 0) II (number 1= 0))
+            </p>
+            <p>
+                cin >> group >> number;
+            </p>
+            <p>
+                { // Инвариант: переменные — «group», «member» — не равны нулю.
+            </p>
+            <p>
+                cout << "Количество людей в группе" << group << " равно " << number << ".\n";
+            </p>
+            <p>
+                incomeData[index(group)] += number; 
+            </p>
+            <p>
+                } // Конец цикла — «for».
+            </p>
+            <p>
+                }
+            </p>
+            <p>
+                // Конец функции — «readData».
+            </p>
+            <div class = "Button_Left">
+                <button onclick = "window.location = 'Topic_6.html'">
+                    Предыдущая страница
+                </button>
+            </div>
+            <div class = "Button_Right">
+                <button onclick = "window.location = 'Topic_8.html'">
+                    Следующая страница
+                </button>
+            </div>
+        </div>
+    </body>
+</html>

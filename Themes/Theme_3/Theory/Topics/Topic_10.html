@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang = "ru">
+    <head>
+        <meta charset = "utf-8">
+        <title>
+            Принципы программирования
+        </title>
+        <link rel = "stylesheet" href = "../../../../CSS/Style.css">
+    </head>
+    <body>
+        <div class = "Header">
+            <h1>
+                Принципы программирования
+            </h1>
+            <div class = "Navigation">
+                <ul>
+                    <li>
+                        <a href = "../../../../Index.html">
+                            Главная
+                        </a>
+                    </li>
+                    <li>
+                        <div class = "Highlighted_Text">
+                            Теория
+                        </div>
+                    </li>
+                    <li>
+                        <a href = "../../Tasks/Tasks.html">
+                            Задания
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class = "Sidebar">
+            <details>
+                <summary>
+                    Список тем
+                </summary>
+                <ul>
+                    <li>
+                        <a href = "Topic_1.html">
+                            Вопросы
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "Topic_2.html">
+                            Принципы программирования
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "Topic_3.html">
+                            Модифицируемость
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "Topic_4.html">
+                            Операторы — «typedef» — облегчают модификацию программ
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "Topic_5.html">
+                            Разметка вывода
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "Topic_6.html">
+                            Надёжное программирование
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "Topic_7.html">
+                            Ненадёжная функция
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "Topic_8.html">
+                            Надёжная функция
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "Topic_9.html">
+                            Предотвращение семантических ошибок
+                        </a>
+                    </li>
+                    <li>
+                        <div class = "Highlighted_Text">
+                            Факториал целого числа
+                        </div>
+                    </li>
+                    <li>
+                        <a href = "Topic_11.html">
+                            8 вопросов, касающихся стиля программирования
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "Topic_12.html">
+                            Основные характеристики программной документации
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "Topic_13.html">
+                            Резюме
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "Topic_14.html">
+                            Вопросы для самопроверки
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "Topic_15.html">
+                            Ответы
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "Topic_16.html">
+                            Ответы: спецификации включают в себя определения типов, аргументы, а также пред- и постусловия. 
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "Topic_17.html">
+                            Другое решение
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "Topic_18.html">
+                            Упражнения
+                        </a>
+                    </li>
+                </ul>
+            </details>
+        </div>
+        <div class = "Main_Text">
+            <div class = "Main_Text_Header">
+                <h1>
+                    Факториал целого числа
+                </h1>
+            </div>
+            <p>
+                int factorial(int n) 
+            </p>
+            <p>
+                // Вычисляет факториал целого числа. Предусловие: значение — «n» — >= 0. Постусловие: если значение — «n» — > 0, возвращает значение — «n * (n-1) * ... * 1». Если значение — «n» = 0, возвращает число — 1.
+            </p>
+            <p>
+                {
+            </p>
+            <p>
+                int fact = 1; 
+            </p>
+            <p>
+                for (int i = n; i > 1; —i)
+            </p>
+            <p>
+                fact *= i; 
+            </p>
+            <p>
+                return fact; 
+            </p>
+            <p>
+                } // Конец функции — «factorial».
+            </p>
+            <div class = "Button_Left">
+                <button onclick = "window.location = 'Topic_9.html'">
+                    Предыдущая страница
+                </button>
+            </div>
+            <div class = "Button_Right">
+                <button onclick = "window.location = 'Topic_11.html'">
+                    Следующая страница
+                </button>
+            </div>
+        </div>
+    </body>
+</html>
