@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang = "ru">
+    <head>
+        <meta charset = "utf-8">
+        <title>
+            Более строгая формулировка описанного выше решения задачи
+        </title>
+        <link rel = "stylesheet" href = "../../../../CSS/Style.css">
+    </head>
+    <body>
+        <div class = "Header">
+            <h1>
+                Рекурсия: зеркала
+            </h1>
+            <div class = "Navigation">
+                <ul>
+                    <li>
+                        <a href = "../../../../Index.html">
+                            Главная
+                        </a>
+                    </li>
+                    <li>
+                        <div class = "Highlighted_Text">
+                            Теория
+                        </div>
+                    </li>
+                    <li>
+                        <a href = "../../Tasks/Tasks.html">
+                            Задания
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class = "Sidebar">
+            <details>
+                <summary>
+                    Список тем
+                </summary>
+                <ul>
+                    <li>
+                        <a href = "Topic_1.html">
+                            Вопросы
+                        <a>
+                    </li>
+                    <li>
+                        <a href = "Topic_2.html">
+                            Рекурсивные решения
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "Topic_3.html">
+                            Бинарный поиск слова в словаре
+                        </a>
+                    </li>
+                    <li>
+                        <div class = "Highlighted_Text">
+                            Более строгая формулировка описанного выше решения задачи
+                        </div>
+                    </li>
+                    <li>
+                        <a href = "Topic_5.html">
+                            Процесс решения задачи в виде функции имеет особенности
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "Topic_6.html">
+                            4 вопроса о рекурсивном решении
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "Topic_7.html">
+                            Рекурсивная функция
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "Topic_8.html">
+                            Рекурсивная функция, возвращающая значение: факториал числа со значением — «n»
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "Topic_9.html">
+                            Рекурсивное определение факториала
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "Topic_10.html">
+                            Пометим каждый рекурсивный вызов в теле функции
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "Topic_11.html">
+                            Инварианты
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "Topic_12.html">
+                            Рекурсивная функция — «fact»
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "Topic_13.html">
+                            Рекурсивные функции, не возвращающие никаких значений: обратная запись строки
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "Topic_14.html">
+                            Функция — «writeBackward» — на языке — «C++»
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "Topic_15.html">
+                            Временные операторы вывода позволяют отлаживать рекурсивные функции
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "Topic_16.html">
+                            Перечислимые предметы: выбор определённого количества предметов из значения — «n»
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "Topic_17.html">
+                            Поиск элемента в массиве
+                        </a>
+                    </li>
+                </ul>
+            </details>
+        </div>
+        <div class = "Main_Text">
+            <div class = "Main_Text_Header">
+                <h1>
+                    Более строгая формулировка описанного выше решения задачи
+                </h1>
+            </div>
+            <p>
+                search(in aDictionary: Dictionary, in word: string)
+            </p>
+            <p>
+                if // Cловарь — «aDictionary» — состоит из одной страницы.
+            </p>
+            <p>
+                // Ищем слово на этой странице.
+            </p>
+            <p>
+                else
+            </p>
+            <p>
+                {
+            </p>
+            <p>
+                // Открываем словарь — «aDictionary» — посередине. Определяем, какая половина словаря содержит искомое слово 
+            </p>
+            <p>
+                if (// Слово — «word» — содержится в первой половине словаря — «aDictionary».) 
+            </p>
+            <p>
+                search (// Первая половина условия словаря — «aDictionary» — «word».)
+            </p>
+            <p>
+                else 
+            </p>
+            <p>
+                search (// Вторая половина условия словаря — «aDictionary» — «word».)
+            </p>
+            <p>
+                }
+            </p>
+            <div class = "Button_Left">
+                <button onclick = "window.location = 'Topic_3.html'">
+                    Предыдущая страница
+                </button>
+            </div>
+            <div class = "Button_Right">
+                <button onclick = "window.location = 'Topic_5.html'">
+                    Следующая страница
+                </button>
+            </div>
+        </div>
+    </body>
+</html>
