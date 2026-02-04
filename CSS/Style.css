@@ -22,6 +22,28 @@
     margin-left: auto;
     margin-right: auto;
 }
+.Navigation a
+{
+    display: block;
+    color: black;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-right: 1px solid #ccc;
+}
+.Navigation li:last-child a
+{
+    border-right: none; 
+}
+.Navigation a:hover
+{
+    font-weight: bold;
+}
+.Navigation:after
+{
+    content: " ";
+    display: table;
+    clear: both;
+}
 .Main_Text
 {
     margin-left: 550px;
