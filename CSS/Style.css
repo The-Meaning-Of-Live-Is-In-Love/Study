@@ -28,6 +28,7 @@
     color: black;
     padding: 10px 25px;
     text-decoration: none;
+    width: 450px;
     border-right: 1px solid #ccc;
 }
 .Navigation li:last-child a
@@ -36,13 +37,21 @@
 }
 .Navigation a:hover
 {
-    font-weight: bold;
+    animation-name: Select;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
 }
-.Navigation:after
+@keyframes Select
 {
-    content: " ";
-    display: table;
-    clear: both;
+    from
+    {
+        font-size: 26px;
+    }
+    to
+    {
+        font-size: 32px;
+    }
 }
 .Main_Text
 {
