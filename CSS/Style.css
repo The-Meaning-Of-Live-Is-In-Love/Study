@@ -99,10 +99,14 @@ p
     overflow-wrap: break-word;
     width: 20%;
     background-color: #FFFAFA;
+    position: fixed;
+    overflow: scroll;
+    height: 500px;
 }
 .Sidebar a
 {
     color: black;
+    text-decoration: none;
 }
 .Sidebar a:hover
 {
@@ -121,10 +125,6 @@ p
     {
         text-decoration: underline;
     }
-}
-.Sidebar a
-{
-    text-decoration: none;
 }
 .Highlighted_Text
 {
