@@ -101,6 +101,28 @@ p
 }
 .Sidebar a
 {
+    color: black;
+}
+.Sidebar a:hover
+{
+    animation-name: Select_Sidebar;
+    animation-duration: 0s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+@keyframes Select_Sidebar
+{
+    from 
+    {
+        text-decoration: none;
+    }
+    to
+    {
+        text-decoration: underline;
+    }
+}
+.Sidebar a
+{
     text-decoration: none;
 }
 .Highlighted_Text
