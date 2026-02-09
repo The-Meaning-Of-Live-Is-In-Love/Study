@@ -77,6 +77,8 @@
     line-height: 150%;
     font-size: 18px;
     background-color: #FFFAFA;
+    overflow: scroll;
+    height: 500px;
 }
 .Main_Text_Header
 {
@@ -99,9 +101,6 @@ p
     overflow-wrap: break-word;
     width: 20%;
     background-color: #FFFAFA;
-    position: fixed;
-    overflow: scroll;
-    height: 500px;
 }
 .Sidebar a
 {
