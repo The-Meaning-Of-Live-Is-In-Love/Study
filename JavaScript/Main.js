@@ -123,11 +123,11 @@ function Answer_1_5(id)
         alert("Неправильно.");
     }
 }
-function Answer_1_1(id)
+function Answer_2_1(id)
 {
     event.preventDefault();
-    Task_Answer_1_1 = document.querySelector(`[name="${id}"]:checked`).value;
-    if (Task_Answer_1_1 == 1)
+    Task_Answer_2_1 = document.querySelector(`[name="${id}"]:checked`).value;
+    if (Task_Answer_2_1 == 1)
     {
         alert("Правильно!");
     }
@@ -136,11 +136,11 @@ function Answer_1_1(id)
         alert("Неправильно.");
     }
 }
-function Answer_1_2(id)
+function Answer_2_2(id)
 {
     event.preventDefault();
-    Task_Answer_1_2 = document.querySelector(`[name="${id}"]:checked`).value;
-    if (Task_Answer_1_2 == 2)
+    Task_Answer_2_2 = document.querySelector(`[name="${id}"]:checked`).value;
+    if (Task_Answer_2_2 == 2)
     {
         alert("Правильно!");
     }
@@ -149,11 +149,11 @@ function Answer_1_2(id)
         alert("Неправильно.");
     }
 }
-function Answer_1_3(id)
+function Answer_2_3(id)
 {
     event.preventDefault();
-    Task_Answer_1_3 = document.querySelector(`[name="${id}"]:checked`).value;
-    if (Task_Answer_1_3 == 3)
+    Task_Answer_2_3 = document.querySelector(`[name="${id}"]:checked`).value;
+    if (Task_Answer_2_3 == 3)
     {
         alert("Правильно!");
     }
@@ -162,11 +162,11 @@ function Answer_1_3(id)
         alert("Неправильно.");
     }
 }
-function Answer_1_4(id)
+function Answer_2_4(id)
 {
     event.preventDefault();
-    Task_Answer_1_4 = document.querySelector(`[name="${id}"]:checked`).value;
-    if (Task_Answer_1_4 == 1)
+    Task_Answer_2_4 = document.querySelector(`[name="${id}"]:checked`).value;
+    if (Task_Answer_2_4 == 1)
     {
         alert("Правильно!");
     }
@@ -175,11 +175,11 @@ function Answer_1_4(id)
         alert("Неправильно.");
     }
 }
-function Answer_1_5(id)
+function Answer_2_5(id)
 {
     event.preventDefault();
-    Task_Answer_1_5 = document.querySelector(`[name="${id}"]:checked`).value;
-    if (Task_Answer_1_5 == 2)
+    Task_Answer_2_5 = document.querySelector(`[name="${id}"]:checked`).value;
+    if (Task_Answer_2_5 == 2)
     {
         alert("Правильно!");
     }
@@ -187,11 +187,11 @@ function Answer_1_5(id)
     {
         alert("Неправильно.");
     }
-} function Answer_1_6(id)
+} function Answer_2_6(id)
 {
     event.preventDefault();
-    Task_Answer_1_6 = document.querySelector(`[name="${id}"]:checked`).value;
-    if (Task_Answer_1_6 == 3)
+    Task_Answer_2_6 = document.querySelector(`[name="${id}"]:checked`).value;
+    if (Task_Answer_2_6 == 3)
     {
         alert("Правильно!");
     }
@@ -199,11 +199,11 @@ function Answer_1_5(id)
     {
         alert("Неправильно.");
     }
-} function Answer_1_7(id)
+} function Answer_2_7(id)
 {
     event.preventDefault();
-    Task_Answer_1_7 = document.querySelector(`[name="${id}"]:checked`).value;
-    if (Task_Answer_1_7 == 1)
+    Task_Answer_2_7 = document.querySelector(`[name="${id}"]:checked`).value;
+    if (Task_Answer_2_7 == 1)
     {
         alert("Правильно!");
     }
@@ -211,11 +211,11 @@ function Answer_1_5(id)
     {
         alert("Неправильно.");
     }
-} function Answer_1_8(id)
+} function Answer_2_8(id)
 {
     event.preventDefault();
-    Task_Answer_1_8 = document.querySelector(`[name="${id}"]:checked`).value;
-    if (Task_Answer_1_8 == 2)
+    Task_Answer_2_8 = document.querySelector(`[name="${id}"]:checked`).value;
+    if (Task_Answer_2_8 == 2)
     {
         alert("Правильно!");
     }
@@ -223,11 +223,11 @@ function Answer_1_5(id)
     {
         alert("Неправильно.");
     }
-} function Answer_9(id)
+} function Answer_2_9(id)
 {
     event.preventDefault();
-    Task_Answer_9 = document.querySelector(`[name="${id}"]:checked`).value;
-    if (Task_Answer_9 == 3)
+    Task_Answer_2_9 = document.querySelector(`[name="${id}"]:checked`).value;
+    if (Task_Answer_2_9 == 3)
     {
         alert("Правильно!");
     }
@@ -235,11 +235,11 @@ function Answer_1_5(id)
     {
         alert("Неправильно.");
     }
-} function Answer_1_10(id)
+} function Answer_2_10(id)
 {
     event.preventDefault();
-    Task_Answer_1_10 = document.querySelector(`[name="${id}"]:checked`).value;
-    if (Task_Answer_1_10 == 1)
+    Task_Answer_2_10 = document.querySelector(`[name="${id}"]:checked`).value;
+    if (Task_Answer_2_10 == 1)
     {
         alert("Правильно!");
     }
