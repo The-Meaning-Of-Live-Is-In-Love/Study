@@ -116,8 +116,8 @@ p
 }
 .Sidebar ul
 {
-    overflow: scroll;
-    height: 429.5px;
+    overflow: auto;
+    max-height: 429.5px;
 }
 @keyframes Select_Sidebar
 {
@@ -141,7 +141,7 @@ p
 }
 .Button_Center
 {
-    margin-left: calc(var(--Main-Text-Width) /  2 - 50px);
+   float: center;
 }
 .Button_Right
 {
