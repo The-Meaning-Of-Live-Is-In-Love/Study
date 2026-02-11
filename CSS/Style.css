@@ -5,7 +5,8 @@
     background-color: #FFFAFA;
 }
 .Navigation,
-.Navigation_2
+.Navigation_2,
+.Navigation_3
 {
     text-align: center;
     background-color: #FFFAFA;
@@ -14,12 +15,14 @@
     font-size: 26px;
 }
 .Navigation ul,
-.Navigation_2 ul
+.Navigation_2 ul,
+.Navigation_3 ul
 {
     display: flex;
 }
 .Navigation li,
-.Navigation_2 li
+.Navigation_2 li,
+.Navigation_3 li
 {
     list-style: none;
     margin-left: auto;
@@ -33,8 +36,13 @@
 {
     width: 25%;
 }
+.Navigation_3 li
+{
+    width: 50%
+}
 .Navigation a,
-.Navigation_2 a
+.Navigation_2 a,
+.Navigation_3 a
 {
     display: block;
     color: black;
@@ -43,12 +51,14 @@
     border-right: 1px solid #ccc;
 }
 .Navigation li:last-child a,
-.Navigation_2 li:last-child a
+.Navigation_2 li:last-child a,
+.Navigation_3 li:last-child a
 {
     border-right: none; 
 }
 .Navigation a:hover,
-.Navigation_2 a:hover
+.Navigation_2 a:hover,
+.Navigation_3 a:hover
 {
     animation-name: Select;
     animation-duration: 1s;
