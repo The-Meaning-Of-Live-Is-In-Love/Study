@@ -55,6 +55,21 @@
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
 }
+.Navigation_Sidebar li
+{
+    font-size: 16px;
+}
+.Navigation_Sidebar ul
+{
+    display: inline;
+}
+.Navigation_Sidebar a:hover
+{
+    animation-name: Select_2;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
 @keyframes Select
 {
     from
@@ -64,6 +79,17 @@
     to
     {
         font-size: 32px;
+    }
+}
+@keyframes Select_2
+{
+    from
+    {
+        font-size: 16px;
+    }
+    to
+    {
+        font-size: 20px;
     }
 }
 .Main_Text
