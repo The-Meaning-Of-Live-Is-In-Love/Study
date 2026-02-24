@@ -1,3 +1,70 @@
+@property --Angle{
+  syntax: '<angle>';
+  inherits: true;
+  initial-value: 0deg;
+}
+@property --Percentage {
+  syntax: '<percentage>';
+  inherits: true;
+  initial-value: 0%;
+}
+@property --Color_1 {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #000;
+}
+@property --Color_2 {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #000;
+}
+
+html {
+  --Change: #0000, var(--Color_1) 2deg calc(var(--Angle) - 2deg), #0000 var(--Angle);
+  background: 
+    conic-gradient(from calc(-45deg - var(--Angle) / 2) at top var(--Percentage) left var(--Percentage), var(--Change)),
+    conic-gradient(from calc(-45deg - var(--Angle) / 2) at top var(--Percentage) left var(--Percentage), var(--Change)),
+    conic-gradient(from calc( 45deg - var(--Angle) / 2) at top var(--Percentage) right var(--Percentage), var(--Change)),
+    conic-gradient(from calc( 45deg - var(--Angle) / 2) at top var(--Percentage) right var(--Percentage), var(--Change)),
+    conic-gradient(from calc(-135deg - var(--Angle) / 2) at bottom var(--Percentage) left var(--Percentage), var(--Change)),
+    conic-gradient(from calc(-135deg - var(--Angle) / 2) at bottom var(--Percentage) left var(--Percentage), var(--Change)),
+    conic-gradient(from calc( 135deg - var(--Angle) / 2) at bottom var(--Percentage) right var(--Percentage), var(--Change)),
+    conic-gradient(from calc( 135deg - var(--Angle) / 2) at bottom var(--Percentage) right var(--Percentage), var(--Change))
+    var(--Color_2);
+  background-size: calc(2 * 80px) calc(2 * 80px);
+  animation: Body_Background_Animation 2s infinite alternate linear;
+}
+
+@keyframes Body_Background_Animation {
+  0%, 15% {
+    --Angle: 135deg;
+    --Percentage: 20%;
+    --Color_1: #008cf0;
+    --Color_2: #ffb6c1;
+    background-position: 0 0, 80px 80px;
+  }
+  45%, 50% {
+    --Angle: 90deg;
+    --Percentage: 25%;
+    --Color_1: #008cf0;
+    --Color_2: #ffb6c1;
+    background-position: 0 0, 80px 80px;
+  }
+  50.01%, 55% {
+    --Angle: 90deg;
+    --Percentage: 25%;
+    --Color_2: #008cf0;
+    --Color_1: #ffb6c1;
+    background-position: 80px 0, 0 80px;
+  }
+  85%, 100% {
+    --Angle: 135deg;
+    --Percentage: 20%;
+    --Color_2: #008cf0;
+    --Color_1: #ffb6c1;
+    background-position: 80px 0, 0 80px;
+  }
+}
 .Header
 {
     text-align: center;
@@ -103,12 +170,9 @@
     text-align: justify;
     line-height: 150%;
     font-size: 18px;
-    background-color: #FFFAFA;
     overflow: scroll;
     height: 500px;
-    box-shadow: 2px 3px 20px black, 0 0 60px #8a4d0f inset;
-    background: #fffef0;
-    backdrop-filter: url(#Main_Text_Background);
+    box-shadow: 2px 3px 20px black, 0 0 60px cyan inset;
 }
 .Main_Text_Header
 {
