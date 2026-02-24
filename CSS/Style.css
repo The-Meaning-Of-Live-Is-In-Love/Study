@@ -37,29 +37,29 @@ html {
   0%, 15% {
     --Angle: 135deg;
     --Percentage: 20%;
-    --Color_1: #008cf0;
-    --Color_2: #ffb6c1;
+    --Color_1: black;
+    --Color_2: cyan;
     background-position: 0 0, 80px 80px;
   }
   45%, 50% {
     --Angle: 90deg;
     --Percentage: 25%;
-    --Color_1: #008cf0;
-    --Color_2: #ffb6c1;
+    --Color_1: black;
+    --Color_2: cyan;
     background-position: 0 0, 80px 80px;
   }
   50.01%, 55% {
     --Angle: 90deg;
     --Percentage: 25%;
-    --Color_2: #008cf0;
-    --Color_1: #ffb6c1;
+    --Color_2: black;
+    --Color_1: cyan;
     background-position: 80px 0, 0 80px;
   }
   85%, 100% {
     --Angle: 135deg;
     --Percentage: 20%;
-    --Color_2: #008cf0;
-    --Color_1: #ffb6c1;
+    --Color_2: black;
+    --Color_1: cyan;
     background-position: 80px 0, 0 80px;
   }
 }
