@@ -31,7 +31,7 @@ html {
     conic-gradient(from calc( 135deg - var(--Angle) / 2) at bottom var(--Percentage) right var(--Percentage), var(--Change))
     var(--Color_2);
   background-size: calc(2 * 80px) calc(2 * 80px);
-  animation: Body_Background_Animation 2s infinite alternate linear;
+  animation: Body_Background_Animation 10s infinite alternate linear;
 }
 @keyframes Body_Background_Animation {
   0%, 15% {
@@ -61,6 +61,90 @@ html {
     --Color_2: #008cf0;
     --Color_1: #ffb6c1;
     background-position: 80px 0, 0 80px;
+  }
+}
+.lines {
+  position: absolute;
+  height: 100%;
+  margin: auto;
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+}
+.line {
+  position: relative;
+  width: 1px;
+  height: 100%;
+  overflow: hidden;
+}
+.line::after {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 15vh;
+  width: 100%;
+  top: -50%;
+  left: 0;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 75%, #ffffff 100%);
+  animation: Main_Text_Background_Animation 7s 0s infinite;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+}
+.line:nth-child(1)::after {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #FF4500 75%, #FF4500 100%);
+  animation-delay: 0.5s;
+}
+
+.line:nth-child(2)::after {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #32CD32 75%, #32CD32 100%);
+  animation-delay: 1s;
+}
+
+.line:nth-child(3)::after {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #1E90FF 75%, #1E90FF 100%);
+  animation-delay: 1.5s;
+}
+
+.line:nth-child(4)::after {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #FFD700 75%, #FFD700 100%);
+  animation-delay: 2s;
+}
+
+.line:nth-child(5)::after {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #8A2BE2 75%, #8A2BE2 100%);
+  animation-delay: 2.5s;
+}
+
+.line:nth-child(6)::after {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #20B2AA 75%, #20B2AA 100%);
+  animation-delay: 3s;
+}
+
+.line:nth-child(7)::after {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #DC143C 75%, #DC143C 100%);
+  animation-delay: 3.5s;
+}
+
+.line:nth-child(8)::after {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #00FA9A 75%, #00FA9A 100%);
+  animation-delay: 4s;
+}
+
+.line:nth-child(9)::after {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #FF1493 75%, #FF1493 100%);
+  animation-delay: 4.5s;
+}
+
+.line:nth-child(10)::after {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #00BFFF 75%, #00BFFF 100%);
+  animation-delay: 5s;
+}
+@keyframes Main_Text_Background_Animation {
+  0% {
+    top: -50%;
+  }
+  100% {
+    top: 110%;
   }
 }
 .Header
@@ -177,6 +261,7 @@ html {
     height: 500px;
     box-shadow: 2px 3px 20px black, 0 0 60px cyan inset;
     color: white;
+    background-color: black;
 }
 .Main_Text_Header
 {
