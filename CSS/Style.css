@@ -155,6 +155,7 @@ html {
     border-radius: 50px 50px 50px 50px;
     box-shadow: 2px 3px 20px black, 0 0 60px cyan inset;
     color: white;
+    background-color: black;
 }
 .Navigation,
 .Navigation_2
@@ -285,6 +286,7 @@ p
     max-width: 15%;
     box-shadow: 2px 3px 20px black, 0 0 60px cyan inset;
     color: white;
+    background-color: black;
 }
 .Sidebar a
 {
