@@ -17,7 +17,21 @@ function Switching_Theme(id)
         localStorage.setItem('--Color_Text', 'white');
     }
 }
-
+function Switching_Color_Complementary(id)
+{
+    event.preventDefault();
+    Color_Complementary_Type = document.querySelector(`[name = "${id}"]:checked`).value;
+    if (Color_Complementary_Type == 1)
+    {
+        document.documentElement.style.setProperty('--Color_Complementary', 'cyan');
+        localStorage.setItem('--Color_Complementary', 'cyan');
+    }
+    if (Color_Complementary_Type == 2)
+    {
+        document.documentElement.style.setProperty('--Color_Complementary', 'pink');
+        localStorage.setItem('--Color_Complementary', 'pink');
+    }
+}
 function Answer_1_1(id)
 {
     event.preventDefault();
