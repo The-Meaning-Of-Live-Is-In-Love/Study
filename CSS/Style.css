@@ -11,12 +11,12 @@
 @property --Color_1 {
   syntax: '<color>';
   inherits: true;
-  initial-value: #000;
+  initial-value: white;
 }
 @property --Color_2 {
   syntax: '<color>';
   inherits: true;
-  initial-value: #000;
+  initial-value: white;
 }
 html {
   --Change: #0000, var(--Color_1) 2deg calc(var(--Angle) - 2deg), #0000 var(--Angle);
@@ -31,34 +31,34 @@ html {
     conic-gradient(from calc( 135deg - var(--Angle) / 2) at bottom var(--Percentage) right var(--Percentage), var(--Change))
     var(--Color_2);
   background-size: calc(2 * 80px) calc(2 * 80px);
-  animation: Body_Background_Animation 10s infinite alternate linear;
+  animation: Dark_Body_Background_Animation 10s infinite alternate linear;
 }
-@keyframes Body_Background_Animation {
+@keyframes Dark_Body_Background_Animation {
   0%, 15% {
     --Angle: 135deg;
     --Percentage: 20%;
-    --Color_1: black;
+    --Color_1: white;
     --Color_2: cyan;
     background-position: 0 0, 80px 80px;
   }
   45%, 50% {
     --Angle: 90deg;
     --Percentage: 25%;
-    --Color_1: black;
+    --Color_1: white;
     --Color_2: cyan;
     background-position: 0 0, 80px 80px;
   }
   50.01%, 55% {
     --Angle: 90deg;
     --Percentage: 25%;
-    --Color_2: black;
+    --Color_2: white;
     --Color_1: cyan;
     background-position: 80px 0, 0 80px;
   }
   85%, 100% {
     --Angle: 135deg;
     --Percentage: 20%;
-    --Color_2: black;
+    --Color_2: white;
     --Color_1: cyan;
     background-position: 80px 0, 0 80px;
   }
@@ -147,6 +147,16 @@ html {
     top: 110%;
   }
 }
+@property --Color_Background {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: white;
+}
+@property --Color_Text {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: black;
+}
 .Header
 {
     text-align: center;
@@ -154,8 +164,8 @@ html {
     border: 1px solid white;
     border-radius: 50px 50px 50px 50px;
     box-shadow: 2px 3px 20px black, 0 0 60px cyan inset;
-    color: white;
-    background-color: black;
+    color: black;
+    background-color: white;
     font-family: "Segoe Print";
 }
 .Navigation,
@@ -165,6 +175,7 @@ html {
     border-top: 1px solid white;
     border-bottom: 1px solid white;
     font-size: 26px;
+    color: black;
     border: 1px solid white;
     border-radius: 50px 50px 50px 50px;
     box-shadow: 2px 3px 20px black, 0 0 60px cyan inset;
@@ -195,8 +206,8 @@ html {
     display: block;
     padding: 10px 25px;
     text-decoration: none;
-    border-right: 1px solid white;
-    color: white;
+    border-right: 1px solid black;
+    color: black;
     font-family: "Segoe Print";
 }
 .Navigation li:last-child a,
@@ -263,8 +274,8 @@ html {
     overflow: scroll;
     height: 500px;
     box-shadow: 2px 3px 20px black, 0 0 60px cyan inset;
-    color: white;
-    background-color: black;
+    color: black;
+    background-color: white;
 }
 .Main_Text_Header
 {
@@ -287,8 +298,8 @@ p
     overflow-wrap: break-word;
     max-width: 15%;
     box-shadow: 2px 3px 20px black, 0 0 60px cyan inset;
-    color: white;
-    background-color: black;
+    color: black;
+    background-color: white;
     font-family: "Segoe Print";
     font-weight: bold;
 }
@@ -296,7 +307,6 @@ p
 {
     color: black;
     text-decoration: none;
-    color: white;
     font-family: "Segoe Print";
 }
 .Sidebar a:hover
