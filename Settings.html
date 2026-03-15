@@ -3,19 +3,26 @@
     <head>
         <meta charset = "utf-8">
         <title>
-            Разработка программных модулей
+            Настройки
         </title>
         <link rel = "stylesheet" href = "CSS/Style.css">
     </head>
     <body>
+        <script src = "JavaScript/Main.js">
+        </script>
         <div class = "Header">
             <h1>
-                Разработка программных модулей
+                Настройки
             </h1>
             <div class = "Navigation_2">
                 <ul>
                     <li>
-                        <a href = "Topics/Topic_1.html">
+                        <a href = "Index.html">
+                            Главная
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "Index.html">
                             Жизненный цикл программного обеспечения
                         </a>
                     </li>
@@ -45,14 +52,27 @@
                         </details>
                         </div>
                     </li>
-                    <li>
-                        <a href = "Settings.html">
-                            Настройки
-                        </a>
-                    </li>
                 </ul>
             </div>
         </div>
+        <div class = "Main_Text">
+                <div class = "Main_Text_Header">
+                    <h1>
+                        Тема
+                    </h1>
+                </div>
+                <form onsubmit = "return Switching_Theme('Theme_Type')">
+                    <input type = "radio" name = "Theme_Type" id = "Theme_Type_1" value = "1"/>
+                    Дневная
+                    <br>
+                    <input type = "radio" name = "Theme_Type" id = "Theme_Type_2" value = "2"/>
+                    Ночная
+                    <br>
+                    <button type = "submit">
+                        Отправить
+                    </button>
+                </form>
+            </div>
         <script src = "JavaScript/Colors.js" async>
         </script>
     </body>
