@@ -312,7 +312,8 @@ function Answer_3_5(id)
     {
         alert("Неправильно.");
     }
-} function Answer_3_6(id)
+}
+function Answer_3_6(id)
 {
     event.preventDefault();
     Task_Answer_3_6 = document.querySelector(`[name="${id}"]:checked`).value;
@@ -324,7 +325,8 @@ function Answer_3_5(id)
     {
         alert("Неправильно.");
     }
-} function Answer_3_7(id)
+}
+function Answer_3_7(id)
 {
     event.preventDefault();
     Task_Answer_3_7 = document.querySelector(`[name="${id}"]:checked`).value;
@@ -336,7 +338,8 @@ function Answer_3_5(id)
     {
         alert("Неправильно.");
     }
-} function Answer_3_8(id)
+}
+function Answer_3_8(id)
 {
     event.preventDefault();
     Task_Answer_3_8 = document.querySelector(`[name="${id}"]:checked`).value;
@@ -348,7 +351,8 @@ function Answer_3_5(id)
     {
         alert("Неправильно.");
     }
-} function Answer_3_9(id)
+}
+function Answer_3_9(id)
 {
     event.preventDefault();
     Task_Answer_3_9 = document.querySelector(`[name="${id}"]:checked`).value;
@@ -360,7 +364,8 @@ function Answer_3_5(id)
     {
         alert("Неправильно.");
     }
-} function Answer_3_10(id)
+}
+function Answer_3_10(id)
 {
     event.preventDefault();
     Task_Answer_3_10 = document.querySelector(`[name="${id}"]:checked`).value;
@@ -372,4 +377,10 @@ function Answer_3_5(id)
     {
         alert("Неправильно.");
     }
+}
+function test()
+{
+    event.preventDefault();
+    document.documentElement.style.setProperty('--Color_Complementary', 'cyan');
+    localStorage.setItem('--Color_Complementary', 'cyan');
 }
