@@ -8,6 +8,10 @@ function Switching_Theme(id)
         localStorage.setItem('--Color_Background', 'white');
         document.documentElement.style.setProperty('--Color_Text', 'black');
         localStorage.setItem('--Color_Text', 'black');
+        document.documentElement.style.setProperty('--Color_Background', 'white');
+        localStorage.setItem('--Color_Background', 'white');
+        document.documentElement.style.setProperty('--Color_Text', 'black');
+        localStorage.setItem('--Color_Text', 'black');
     }
     if (Theme_Type == 2)
     {
