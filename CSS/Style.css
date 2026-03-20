@@ -77,7 +77,6 @@ html {
     box-shadow: 2px 3px 20px black, 0 0 60px var(--Color_Complementary) inset;
     color: var(--Color_Text);
     background-color: var(--Color_Background);
-    font-family: "Segoe Print";
 }
 .Navigation,
 .Navigation_2
@@ -119,7 +118,6 @@ html {
     text-decoration: none;
     border-right: 1px solid var(--Color_Text);
     color: var(--Color_Text);
-    font-family: "Segoe Print";
 }
 .Navigation li:last-child a,
 .Navigation_2 li:last-child a
@@ -173,7 +171,6 @@ html {
 }
 .Main_Text
 {
-    font-family: "Segoe Print";
     float: right;
     width: 65%;
     padding: 0px 30px 15px 30px;
@@ -211,14 +208,12 @@ p
     box-shadow: 2px 3px 20px black, 0 0 60px var(--Color_Complementary) inset;
     color: var(--Color_Text);
     background-color: var(--Color_Background);
-    font-family: "Segoe Print";
     font-weight: bold;
 }
 .Sidebar a
 {
     color: var(--Color_Text);
     text-decoration: none;
-    font-family: "Segoe Print";
 }
 .Sidebar a:hover
 {
