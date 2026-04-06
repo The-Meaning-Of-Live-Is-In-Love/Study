@@ -70,6 +70,7 @@ html {
 }
 .Header
 {
+    height: 21vh;
     text-align: center;
     font-size: 20px;
     border: 1px solid white;
@@ -81,6 +82,7 @@ html {
 .Navigation,
 .Navigation_2
 {
+    height: 10vh;
     text-align: center;
     border-top: 1px solid white;
     border-bottom: 1px solid white;
@@ -171,8 +173,11 @@ html {
 }
 .Main_Text
 {
-    float: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
     width: 65%;
+    height: 70vh;
     padding: 0px 30px 15px 30px;
     border: 1px solid white;
     border-radius: 30px 15px 40px 5px;
@@ -180,7 +185,6 @@ html {
     line-height: 150%;
     font-size: 18px;
     overflow: scroll;
-    height: 500px;
     box-shadow: 2px 3px 20px black, 0 0 60px var(--Color_Complementary) inset;
     color: var(--Color_Text);
     background-color: var(--Color_Background);
@@ -197,6 +201,10 @@ p
 }
 .Sidebar
 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    max-height: 70vh;
     float: left;
     padding: 0px 15px 30px 15px;
     border: 1px solid white;
@@ -224,8 +232,8 @@ p
 }
 .Sidebar ul
 {
+    max-height: 65vh;
     overflow: auto;
-    max-height: 429.5px;
 }
 @keyframes Select_Sidebar
 {
