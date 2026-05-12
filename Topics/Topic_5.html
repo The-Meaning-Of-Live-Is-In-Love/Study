@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang = "ru">
     <head>
         <meta charset = "utf-8">
@@ -38,38 +38,10 @@
             </div>
         </div>
         <div class = "Sidebar">
-            <details>
-                <summary>
-                    Список подтем
-                </summary>
-                <ul>
-
-                </ul>
-            </details>
+            <ul>
+            </ul>
         </div>
         <div class = "Main_Text">
-            <div class = "lines">
-                <div class = "line">
-                </div>
-                <div class = "line">
-                </div>
-                <div class = "line">
-                </div>
-                <div class = "line">
-                </div>
-                <div class = "line">
-                </div>
-                <div class = "line">
-                </div>
-                <div class = "line">
-                </div>
-                <div class = "line">
-                </div>
-                <div class = "line">
-                </div>
-                <div class = "line">
-                </div>
-            </div>
             <div class = "Main_Text_Header" id = "Topic_5_1">
                 <h1>
                     Вопросы
@@ -214,6 +186,94 @@
             <p>
                 <img src = "../Images/Image_3.png" style = "width: 50%; height: 50%;"/>
             </p>
+			<div class = "Main_Text_Header" id = "Topic_5_9">
+                <h1>
+                    Спецификации абстрактных типов данных
+                </h1>
+            </div>
+			<p>
+				<ul>
+					<li>
+						Абстрактный список
+					</li>
+				</ul>
+			</p>
+			<p>
+				Операции над абстрактным списокм
+			</p>
+			<p>
+				<ol>
+					<li>
+						Создать пустой список
+					</li>
+					<li>
+						Уничтожить список
+					<li>
+					<li>
+						Определение на пустоту списка
+					</li>
+					<li>
+						Определение количества элементов в списке
+					</li>
+					<li>
+						Вставка элемента в указанную позицию списка
+					</li>
+					<li>
+						Удаление элемента, находящегося в указанной позиции списка
+					</li>
+					<li>
+						Просмотр (извлечение) элемента, находящегося в указанной позиции списка
+					</li>
+				</ol>
+			</p>
+			<div class = "Main_Text_Header" id = "Topic_5_10">
+                <h1>
+                    Для обращения к элементу списка используется номер его позиции
+                </h1>
+            </div>
+			<p>
+				<img src = "../Images/Image_4.png" style = "width: 50%; height: 50%;"/>
+			</p>
+			<div class = "Main_Text_Header" id = "Topic_5_11">
+                <h1>
+                    Псевдокод операций над абстрактным списком
+                </h1>
+            </div>
+			<p>
+				// Элементы списка имеют тип «ListItemType»
+			</p>
+			<p>
+				+createList()
+			</p>
+			<p>
+				// Создаёт пустой список
+			</p>
+			<p>
+				+destroyList
+			</p>
+			<p>
+				// Уничтожает список
+			</p>
+			<p>
+				+isEmpty():boolean{query}
+			</p>
+			<p>
+				// Определяет, пусти ли список
+			</p>
+			<p>
+				+getLength():integer{query}
+			</p>
+			<p>
+				// Возвращает количество элементов, содержащихся в списке
+			</p>
+			<div class = "Main_Text_Header" id = "Topic_5_12">
+                <h1>
+                    +insert out (in index:integer, in newItem:ListItemType, success:boolean)
+                </h1>
+            </div>
+			<p>
+				// Вставляет элемент «newItem» в список на позицию «index» при условии — 1 <= index <= getLength() + 1. index <= getLength() — элементы перенумеровываюися на позицию «index + 1», элемент с которой — «index + 2» и так далее. Признак «success» отмечает, успешно ли выполнена вставка.
+			</p>
         <script src = "../JavaScript/Colors.js" async>
         </script>
     </body>

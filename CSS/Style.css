@@ -1,72 +1,28 @@
-@property --Angle{
-  syntax: '<angle>';
+@property --Color_Text {
+  syntax: '<color>';
   inherits: true;
-  initial-value: 0deg;
-}
-@property --Percentage {
-  syntax: '<percentage>';
-  inherits: true;
-  initial-value: 0%;
+  initial-value: black;
 }
 @property --Color_Background {
   syntax: '<color>';
   inherits: true;
   initial-value: white;
 }
-@property --Color_Text {
-  syntax: '<color>';
-  inherits: true;
-  initial-value: black;
-}
 @property --Color_Complementary {
   syntax: '<color>';
   inherits: true;
   initial-value: cyan;
 }
-html {
-  --Change: #0000, var(--Color_1) 2deg calc(var(--Angle) - 2deg), #0000 var(--Angle);
-  background: 
-    conic-gradient(from calc(-45deg - var(--Angle) / 2) at top var(--Percentage) left var(--Percentage), var(--Change)),
-    conic-gradient(from calc(-45deg - var(--Angle) / 2) at top var(--Percentage) left var(--Percentage), var(--Change)),
-    conic-gradient(from calc( 45deg - var(--Angle) / 2) at top var(--Percentage) right var(--Percentage), var(--Change)),
-    conic-gradient(from calc( 45deg - var(--Angle) / 2) at top var(--Percentage) right var(--Percentage), var(--Change)),
-    conic-gradient(from calc(-135deg - var(--Angle) / 2) at bottom var(--Percentage) left var(--Percentage), var(--Change)),
-    conic-gradient(from calc(-135deg - var(--Angle) / 2) at bottom var(--Percentage) left var(--Percentage), var(--Change)),
-    conic-gradient(from calc( 135deg - var(--Angle) / 2) at bottom var(--Percentage) right var(--Percentage), var(--Change)),
-    conic-gradient(from calc( 135deg - var(--Angle) / 2) at bottom var(--Percentage) right var(--Percentage), var(--Change))
-    var(--Color_2);
-  background-size: calc(2 * 80px) calc(2 * 80px);
-  animation: Dark_Body_Background_Animation 10s infinite alternate linear;
+:root
+{
+    --Color_Complementary_1: 127, 215, 245;
+    --Color_Complementary_2: 192, 235, 250;
 }
-@keyframes Dark_Body_Background_Animation {
-  0%, 15% {
-    --Angle: 135deg;
-    --Percentage: 20%;
-    --Color_1: var(--Color_Background);
-    --Color_2: var(--Color_Complementary);
-    background-position: 0 0, 80px 80px;
-  }
-  45%, 50% {
-    --Angle: 90deg;
-    --Percentage: 25%;
-    --Color_1: var(--Color_Background);
-    --Color_2: var(--Color_Complementary);
-    background-position: 0 0, 80px 80px;
-  }
-  50.01%, 55% {
-    --Angle: 90deg;
-    --Percentage: 25%;
-    --Color_2: var(--Color_Background);
-    --Color_1: var(--Color_Complementary);
-    background-position: 80px 0, 0 80px;
-  }
-  85%, 100% {
-    --Angle: 135deg;
-    --Percentage: 20%;
-    --Color_2: var(--Color_Background);
-    --Color_1: var(--Color_Complementary);
-    background-position: 80px 0, 0 80px;
-  }
+html
+{
+  height: 100%;
+  background: repeating-linear-gradient(-45deg, transparent, transparent 1em, rgba(var(--Color_Complementary_1), 0.4) 0, rgba(var(--Color_Complementary_1), 0.1) 2em, transparent 0, transparent 1em, rgba(var(--Color_Complementary_1), 0.3) 0, rgba(var(--Color_Complementary_1), 0.2) 4em, transparent 0, transparent 1em, rgba(var(--Color_Complementary_2), 0.6) 0, rgba(var(--Color_Complementary_2), 0.2) 2em), repeating-linear-gradient(45deg, transparent, transparent 1em, rgba(var(--Color_Complementary_1), 0.4) 0, rgba(var(--Color_Complementary_1), 0.1) 2em, transparent 0, transparent 1em, rgba(var(--Color_Complementary_1), 0.3) 0, rgba(var(--Color_Complementary_1), 0.2) 4em, transparent 0, transparent 1em, rgba(var(--Color_Complementary_2), 0.4) 0, rgba(var(--Color_Complementary_2), 0.1) 2em), var(--Color_Background);
+  background-blend-mode: multiply;
 }
 .Header
 {
@@ -91,6 +47,7 @@ html {
     border: 1px solid white;
     border-radius: 50px 50px 50px 50px;
     box-shadow: 2px 3px 20px black, 0 0 60px var(--Color_Complementary) inset;
+    background-color: var(--Color_Background);
 }
 .Navigation ul,
 .Navigation_2 ul
@@ -173,10 +130,9 @@ html {
 }
 .Main_Text
 {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 55%;
     height: 70vh;
     padding: 0px 30px 15px 30px;
     border: 1px solid white;
@@ -201,9 +157,7 @@ p
 }
 .Sidebar
 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    margin-left: 0;
     max-height: 70vh;
     float: left;
     padding: 0px 15px 30px 15px;
