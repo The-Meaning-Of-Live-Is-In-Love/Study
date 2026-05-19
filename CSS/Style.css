@@ -18,15 +18,18 @@
     --Color_Complementary_1: 127, 215, 245;
     --Color_Complementary_2: 192, 235, 250;
 }
-html
+html,
+body
 {
   height: 100%;
   background: repeating-linear-gradient(-45deg, transparent, transparent 1em, rgba(var(--Color_Complementary_1), 0.4) 0, rgba(var(--Color_Complementary_1), 0.1) 2em, transparent 0, transparent 1em, rgba(var(--Color_Complementary_1), 0.3) 0, rgba(var(--Color_Complementary_1), 0.2) 4em, transparent 0, transparent 1em, rgba(var(--Color_Complementary_2), 0.6) 0, rgba(var(--Color_Complementary_2), 0.2) 2em), repeating-linear-gradient(45deg, transparent, transparent 1em, rgba(var(--Color_Complementary_1), 0.4) 0, rgba(var(--Color_Complementary_1), 0.1) 2em, transparent 0, transparent 1em, rgba(var(--Color_Complementary_1), 0.3) 0, rgba(var(--Color_Complementary_1), 0.2) 4em, transparent 0, transparent 1em, rgba(var(--Color_Complementary_2), 0.4) 0, rgba(var(--Color_Complementary_2), 0.1) 2em), var(--Color_Background);
   background-blend-mode: multiply;
+  scrollbar-width: thin;
+  scrollbar-color: #18aaaa #f1f5f9;
 }
 .Header
 {
-    height: 21vh;
+    height: auto;
     text-align: center;
     font-size: 20px;
     border: 1px solid white;
@@ -38,7 +41,7 @@ html
 .Navigation,
 .Navigation_2
 {
-    height: 10vh;
+    height: auto;
     text-align: center;
     border-top: 1px solid white;
     border-bottom: 1px solid white;
@@ -60,6 +63,9 @@ html
     list-style: none;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
 }
 .Navigation li
 {
@@ -83,13 +89,37 @@ html
 {
     border-right: none; 
 }
-.Navigation a:hover,
-.Navigation_2 a:hover
+.Navigation a,
+.Navigation_2 a {
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+}
+.Navigation a:after,
+.Navigation_2 a:after
 {
-    animation-name: Select;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-in-out;
+	content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.5s;
+}
+.Navigation a:hover:after,
+.Navigation_2 a:hover:after
+{
+	content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 2px;
+    background-color: cyan;
+    transition: width 0.5s;
 }
 .Navigation_Sidebar li
 {
@@ -99,41 +129,41 @@ html
 {
     display: inline;
 }
-.Navigation_Sidebar a:hover
+.dropdown
 {
-    animation-name: Select_2;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-in-out;
+    position: relative;
 }
-@keyframes Select
+.dropdown-content
 {
-    from
-    {
-        font-size: 26px;
-    }
-    to
-    {
-        font-size: 32px;
-    }
+    position: absolute;
+    background-color: var(--Color_Background);
+    box-shadow: 2px 3px 20px black, 0 0 60px var(--Color_Complementary) inset;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s;
+    pointer-events: none;
+    border-radius: 0.5rem;
+    z-index: 1;
 }
-@keyframes Select_2
+.dropdown:hover .dropdown-content
 {
-    from
-    {
-        font-size: 16px;
-    }
-    to
-    {
-        font-size: 20px;
-    }
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+.dropdown-content a
+{
+    color: var(--Color_Text);
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    display: block;
 }
 .Main_Text
 {
     margin-left: auto;
     margin-right: auto;
     width: 55%;
-    height: 70vh;
+    height: 65vh;
     padding: 0px 30px 15px 30px;
     border: 1px solid white;
     border-radius: 30px 15px 40px 5px;
@@ -158,7 +188,7 @@ p
 .Sidebar
 {
     margin-left: 0;
-    max-height: 70vh;
+    max-height: 65vh;
     float: left;
     padding: 0px 15px 30px 15px;
     border: 1px solid white;
@@ -177,28 +207,42 @@ p
     color: var(--Color_Text);
     text-decoration: none;
 }
-.Sidebar a:hover
-{
-    animation-name: Select_Sidebar;
-    animation-duration: 0s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-in-out;
-}
 .Sidebar ul
 {
     max-height: 65vh;
     overflow: auto;
 }
-@keyframes Select_Sidebar
+.Sidebar a,
+.Sidebar a {
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+}
+.Sidebar a:after,
+.Sidebar a:after
 {
-    from 
-    {
-        text-decoration: none;
-    }
-    to
-    {
-        text-decoration: underline;
-    }
+	content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.5s;
+}
+.Sidebar a:hover:after,
+.Sidebar a:hover:after
+{
+	content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 2px;
+    background-color: cyan;
+    transition: width 0.5s;
 }
 .Highlighted_Text
 {
