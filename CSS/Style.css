@@ -21,11 +21,38 @@
 html,
 body
 {
-  height: 100%;
-  background: repeating-linear-gradient(-45deg, transparent, transparent 1em, rgba(var(--Color_Complementary_1), 0.4) 0, rgba(var(--Color_Complementary_1), 0.1) 2em, transparent 0, transparent 1em, rgba(var(--Color_Complementary_1), 0.3) 0, rgba(var(--Color_Complementary_1), 0.2) 4em, transparent 0, transparent 1em, rgba(var(--Color_Complementary_2), 0.6) 0, rgba(var(--Color_Complementary_2), 0.2) 2em), repeating-linear-gradient(45deg, transparent, transparent 1em, rgba(var(--Color_Complementary_1), 0.4) 0, rgba(var(--Color_Complementary_1), 0.1) 2em, transparent 0, transparent 1em, rgba(var(--Color_Complementary_1), 0.3) 0, rgba(var(--Color_Complementary_1), 0.2) 4em, transparent 0, transparent 1em, rgba(var(--Color_Complementary_2), 0.4) 0, rgba(var(--Color_Complementary_2), 0.1) 2em), var(--Color_Background);
-  background-blend-mode: multiply;
-  scrollbar-width: thin;
-  scrollbar-color: #18aaaa #f1f5f9;
+    height: 100%;
+    background: repeating-linear-gradient(-45deg, transparent, transparent 1em, rgba(var(--Color_Complementary_1), 0.4) 0, rgba(var(--Color_Complementary_1), 0.1) 2em, transparent 0, transparent 1em, rgba(var(--Color_Complementary_1), 0.3) 0, rgba(var(--Color_Complementary_1), 0.2) 4em, transparent 0, transparent 1em, rgba(var(--Color_Complementary_2), 0.6) 0, rgba(var(--Color_Complementary_2), 0.2) 2em), repeating-linear-gradient(45deg, transparent, transparent 1em, rgba(var(--Color_Complementary_1), 0.4) 0, rgba(var(--Color_Complementary_1), 0.1) 2em, transparent 0, transparent 1em, rgba(var(--Color_Complementary_1), 0.3) 0, rgba(var(--Color_Complementary_1), 0.2) 4em, transparent 0, transparent 1em, rgba(var(--Color_Complementary_2), 0.4) 0, rgba(var(--Color_Complementary_2), 0.1) 2em), var(--Color_Background);
+    background-blend-mode: multiply;
+    scrollbar-width: thin;
+    scrollbar-color: #18aaaa #f1f5f9;
+}
+button {
+    text-align: center;
+    display: inline-block;
+    padding: 15px 40px;
+    border: 1px solid #fff;
+    cursor: pointer;
+    letter-spacing: 2px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 20px;
+    background-color: var(--Color_Complementary);
+}
+button:before {
+    content: "";
+    position: absolute;
+    height: 150px;
+    width: 50px;
+    background: #fff;
+    left: -55px;
+    top: -40px;
+    transform: rotate(37deg);
+    transition: all .3s;
+    opacity: 0.7;
+}
+button:hover:before {
+  left: 95%;
 }
 .Header
 {
