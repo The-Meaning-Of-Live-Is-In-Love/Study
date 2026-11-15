@@ -207,24 +207,15 @@
             <p>
                 Именованные константы облегчают модификацию программ.
             </p>
-            <p>
-                int scores[202];
-            </p>
-            <p>
-                for (index = 0 through 201)
-            </p>
-            <p>
-                Обработка оценок.
-            </p>
-            <p>
-                const int NUMBER_OF_MAJORS = 202;
-            </p>
-            <p>
-                int scores[NUMBER_OF_MAJORS];
-            </p>
-            <p>
-                for (index = 0 through NUMBER_OF_MAJORS - 1)
-            </p>
+            <code>
+                <pre>
+for (index = 0 through 201)
+Обработка оценок.
+const int NUMBER_OF_MAJORS = 202;
+int scores[NUMBER_OF_MAJORS];
+for (index = 0 through NUMBER_OF_MAJORS - 1)
+                </pre>
+            </code>
             <p>
                 Обработка оценок.
             </p>
@@ -233,12 +224,12 @@
                     Операторы — «typedef» — облегчают модификацию программ
                 </h1>
             </div>
-            <p>
-                typedef float RealType;
-            </p>
-            <p>
-                typedef long double RealType;
-            </p>
+            <code>
+                <pre>
+typedef float RealType;
+typedef long double RealType;
+                </pre>
+            </code>
             <p>
                 Приглашение к вводу данных.
             </p>
@@ -362,81 +353,35 @@
                     Ненадёжная функция
                 </h1>
             </div>
-            <p>
-                const mt LOW_END = 10;
-            </p>
-            <p>
-                // Нижняя граница доходов.
-            </p>
-            <p>
-                const int HIGH_END = 10; // Верхняя граница доходов .
-            </p>
-            <p>
-                const int TABLE_SIZE = HIGH_END - LOW__END + 1; 
-            </p>
-            <p>
-                typedef int TableType[TABLE_SIZE]; 
-            </p>
-            <p>
-                int index(int group) 
-            </p>
-            <p>
-                // Возвращает индекс массива, соответствующий номеру группы. 
-            </p>
-            <p>
-                {
-            </p>
-            <p>
-                return group - LOW_END; 
-            </p>
-            <p>
-                } // Конец функции — «index».
-            </p>
-            <p>
-                void readData(TableType incomeData) 
-            </p>
-            <p>
-                // Считывает и организовывает статистические данные о доходах. Предусловие: вызываемый модуль выдает инструкции и предлагает пользователю ввести данные. Входные данные не должны содержать ошибки. Каждая строка имеет вид — «G» (количество), «N» (количество людей, чей годовой доход равен тысячам долларов со значением — «G» (LOW_END <= G <= HIGH_END)). Ввод данных завершается после считывания строки, в которой числа — «G», «N» — равны нулю. Постусловие: число — «incomeData[G-LOW__END]» — равно общему количеству людей, чей доход равен значению — «G» — тысяч долларов для каждого данного считанного значения. Считанные значения выводятся на экран.
-            </p>
-            <p>
-                {
-            </p>
-            <p>
-                int group, number; // Входные значения.
-            </p>
-            <p>
-                // Очищаем массив.
-            </p>
-            <p>
-                for (group = LOW__END; group <= HIGH_END; ++group)
-            </p>
-            <p>
-                incomeData[index(group)] = 0;
-            </p>
-            <p>
-                for (cin >> group >> number; (group != 0) II (number 1= 0))
-            </p>
-            <p>
-                cin >> group >> number;
-            </p>
-            <p>
-                { // Инвариант: переменные — «group», «member» — не равны нулю.
-            </p>
-            <p>
-                cout << "Количество людей в группе" << group << " равно " << number << ".\n";
-            </p>
-            <p>
-                incomeData[index(group)] += number; 
-            </p>
-            <p>
-                } // Конец цикла — «for».
-            </p>
-            <p>
-                }
-            </p>
-            <p>
-                // Конец функции — «readData».
-            </p>
+            <code>
+                <pre>
+const mt LOW_END = 10;
+// Нижняя граница доходов.
+const int HIGH_END = 10; // Верхняя граница доходов .
+const int TABLE_SIZE = HIGH_END - LOW__END + 1;
+typedef int TableType[TABLE_SIZE];
+int index(int group)
+// Возвращает индекс массива, соответствующий номеру группы.
+{
+return group - LOW_END;
+} // Конец функции — «index».
+void readData(TableType incomeData)
+// Считывает и организовывает статистические данные о доходах. Предусловие: вызываемый модуль выдает инструкции и предлагает пользователю ввести данные. Входные данные не должны содержать ошибки. Каждая строка имеет вид — «G» (количество), «N» (количество людей, чей годовой доход равен тысячам долларов со значением — «G» (LOW_END <= G <= HIGH_END)). Ввод данных завершается после считывания строки, в которой числа — «G», «N» — равны нулю. Постусловие: число — «incomeData[G-LOW__END]» — равно общему количеству людей, чей доход равен значению — «G» — тысяч долларов для каждого данного считанного значения. Считанные значения выводятся на экран.
+{
+int group, number; // Входные значения.
+// Очищаем массив.
+for (group = LOW__END; group <= HIGH_END; ++group)
+incomeData[index(group)] = 0;
+for (cin >> group >> number; (group != 0) II (number 1= 0))
+cin >> group >> number;
+{ // Инвариант: переменные — «group», «member» — не равны нулю.
+cout << "Количество людей в группе" << group << " равно " << number << ".\n";
+incomeData[index(group)] += number;
+} // Конец цикла — «for».
+}
+// Конец функции — «readData».
+                </pre>
+            </code>
             <div class = "Main_Text_Header" id = "Topic_3_8">
                 <h1>
                     Надёжная функция
